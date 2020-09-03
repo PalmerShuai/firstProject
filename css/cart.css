@@ -421,19 +421,23 @@
 
 .deleteChoose {
     height: 46px;
-    line-height: 46px;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
 }
 
-.deleteChoose a {
-    margin-left: 20px;
+.deleteChoose i {
+    display: block;
     color: #a01f23;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .deleteChoose span {
-    margin-left: 630px;
+    float: right;
     color: #666666;
+    margin-top: 20px;
+    display: block;
 }
 
 .Settlement {

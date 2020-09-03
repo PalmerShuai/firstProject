@@ -4,6 +4,8 @@ $(function() {
     var uid = JSON.parse(localStorage.getItem(userNam));
     console.log(uid);
     var cartListJ = document.getElementById("cartListJ");
+
+
     $.get("http://jx.xuzhixiang.top/ap/api/cart-list.php", {
 
         id: uid
@@ -60,24 +62,66 @@ $(function() {
         var foodList = document.querySelectorAll(".foodList");
         var allNmma = document.getElementById("allNmma");
         var allNma = document.getElementById("allNma");
+        var okeop = document.querySelectorAll(".keop");
+        var deleteChAll = document.querySelectorAll(".deleteChAll");
+        var ofreeCho = document.getElementById("freeCho");
 
+        console.log(ofreeCho);
+
+        function zongjia() {
+            let allNm = 0;
+            let allNmm = 0;
+            for (let a = 0; a < ck.length; a++) {
+                if (ck[a].checked) {
+
+
+                    allNm += +product[a].innerText;
+                    allNmm += +genum[a].value;
+                }
+            }
+            console.log(allNm);
+            console.log(allNmm)
+            allNma.innerText = allNmm;
+            allNmma.innerText = allNm;
+        }
         for (let i = 0; i < data.data.length; i++) {
 
 
             less[i].onclick = function() {
-                console.log(genum[i])
-                console.log("aaa");
+                // console.log(genum[i])
+                // console.log("aaa");
                 genum[i].value--;
-                if (genum[i].value == 0) {
+                if (genum[i].value <= 1) {
                     genum[i].value = 1;
                 }
-                product[i].innerHTML = danjia[i].innerText * genum[i].value;
+                if (genum[i].value >= 1) {
+                    console.log("aaa")
+                    product[i].innerHTML = danjia[i].innerText * genum[i].value;
+                    zongjia();
+                    $.get("http://jx.xuzhixiang.top/ap/api/cart-update-num.php", {
+                        uid: uid,
+                        pid: data.data[i].pid,
+                        pnum: genum[i].value
+                    }, function(data) {
+                        console.log(data)
+
+                    })
+                }
             }
             plus[i].onclick = function() {
                 console.log(genum[i])
                 console.log("aaa");
                 genum[i].value++;
                 product[i].innerHTML = danjia[i].innerText * genum[i].value;
+                zongjia();
+                $.get("http://jx.xuzhixiang.top/ap/api/cart-update-num.php", {
+                    uid: uid,
+                    pid: data.data[i].pid,
+                    pnum: genum[i].value
+                }, function(data) {
+                    console.log(data)
+
+                })
             }
             deleseUl[i].onclick = function() {
                 cartListJ.removeChild(foodList[i]);
@@ -85,12 +129,27 @@ $(function() {
                     uid: uid,
                     pid: data.data[i].pid,
                 }, function(data) {
-                    sonsole.log(data)
+                    console.log(data)
 
                 })
+            };
+            deleteChAll[0].onclick = function() {
+                for (let i = 0; i < ck.length; i++) {
+                    if (ck[i].checked) {
+                        cartListJ.removeChild(foodList[i]);
+                        $.get("http://jx.xuzhixiang.top/ap/api/cart-delete.php", {
+                            uid: uid,
+                            pid: data.data[i].pid,
+                        }, function(data) {
+                            console.log(data)
 
+                        })
+                    }
+                }
             }
+
         }
+
 
 
         var checkAll = document.getElementById("checkAll");
@@ -113,6 +172,12 @@ $(function() {
             console.log(allNmm)
             allNma.innerText = allNmm;
             allNmma.innerText = allNm;
+            if (allNmma.innerHTML >= 200) {
+                ofreeCho.checked = true;
+            } else {
+                ofreeCho.checked = false;
+            }
+
         };
         for (let i = 0; i < ck.length; i++) {
             ck[i].onclick = () => {
@@ -127,34 +192,27 @@ $(function() {
                 } else {
                     checkAll.checked = false;
                 }
-            }
-        };
-        for (let j = 0; j < ck.length; j++) {
-            ck[j].onclick = () => {
-
                 let allNm = 0;
                 let allNmm = 0;
                 for (let a = 0; a < ck.length; a++) {
                     if (ck[a].checked) {
-
-
                         allNm += +product[a].innerText;
                         allNmm += +genum[a].value;
                     }
                 }
-                console.log(allNm);
-                console.log(allNmm)
                 allNma.innerText = allNmm;
                 allNmma.innerText = allNm;
+                if (allNmma.innerHTML >= 200) {
+                    ofreeCho.checked = true;
+                } else {
+                    ofreeCho.checked = false;
+                }
             }
-        }
 
+        };
 
-
+        $(".keop").click(function() {
+            window.location.href = "http://localhost:8080/html/index.html?username=" + userNam;
+        })
     })
-
-
-
-
-
 })

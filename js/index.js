@@ -404,6 +404,54 @@ $(function() {
         };
     });
 
+    var oLibao = document.getElementById("libao");
 
+    function tiaofen(y) {
+        var arr = [];
+        var arr2 = [];
+        console.log("aaa");
+        $.get("http://jx.xuzhixiang.top/ap/api/productlist.php", {
+
+            uid: userId
+        }, function(data) {
+            console.log(data)
+            for (let i = 0; i < data.data.length; i++) {
+
+                arr.push(data.data[i].pdesc);
+            }
+            console.log(arr)
+            var arr1 = arr.sort(function(a, b) {
+                return a - b;
+            })
+            console.log(arr1);
+            for (let a = 0; a < arr1.length; a++) {
+                var index = arr.indexOf(arr1[a]);
+                arr2.push(index);
+
+            }
+            console.log(arr2);
+            console.log(arr2.length);
+            var shopLi = document.getElementById("shopLi");
+            shopLi.innerHTML = "";
+            for (let i = y; i < y + 8; y++) {
+                // var strr = Math.floor(Math.random() * arr2.length);
+
+                shopLi.innerHTML += `
+            <li>
+            <a href="" class="imgWarp">
+                <img src="${data.data[arr2[i]].pimg}" alt="">
+            </a>
+            <a href="" class="imgName">${data.data[arr2[i]].pname}</a>
+            <div class="imgPri">
+                <span>现价： ￥${data.data[arr2[i]].pprice}</span>
+            </div>
+        </li>
+            `
+            }
+        });
+    }
+    oLibao.onclick = function() {
+        tiaofen(0)
+    }
 
 })
