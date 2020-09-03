@@ -1,0 +1,839 @@
+.top {
+    height: 110px;
+    background-color: #ffffff;
+}
+
+.top .left {
+    height: 55px;
+    width: 150px;
+    border: 1px solid red;
+    position: relative;
+    float: left;
+    margin: 35px 0 0 30px;
+}
+
+.top .left .eye {
+    display: inline-block;
+    width: 45px;
+    height: 55px;
+    border: 1px solid red;
+    background: url(../img/eye\,seach.png) -14px -4px;
+}
+
+.top .left .eyeList {
+    display: inline-block;
+    width: 95px;
+    background: url(../img/dian.png) no-repeat 85px center;
+    position: absolute;
+    top: 22px;
+    padding-left: 10px;
+}
+
+.top .left .leftU {
+    width: 85px;
+    border: 1px solid #C9C9C9;
+    text-align: center;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: #FFF;
+    position: absolute;
+    left: 7px;
+    top: 20px;
+    z-index: 2;
+    display: none;
+}
+
+.top .left .eyeList:hover ul {
+    color: red;
+    display: block;
+}
+
+.top .center {
+    width: 160px;
+    height: 60px;
+    float: left;
+    margin: 25px 0 0 350px;
+}
+
+.top .center img {
+    width: 100%;
+    height: 100%;
+}
+
+.top .right {
+    width: 440px;
+    border: 1px solid red;
+    float: left;
+    margin: 45px 0 0 210px;
+}
+
+.top .right .login {
+    width: 80px;
+    display: inline-block;
+    background: url(../img/right.png) -6px -42px no-repeat;
+    margin-right: 40px;
+}
+
+.top .right .login a {
+    text-indent: 20px;
+    display: block;
+}
+
+.top .right .login a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.top .right .myOrder {
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+    background: url(../img/dian.png) no-repeat 55px center;
+    position: relative;
+    padding-left: 5px;
+    margin-right: 15px;
+}
+
+.top .right .orderList {
+    width: 75px;
+    border: 1px solid #C9C9C9;
+    text-align: center;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: #FFF;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    z-index: 2;
+    display: none;
+}
+
+.top .right .myOrder:hover .orderList {
+    display: block;
+}
+
+.top .right .peripheral {
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+    background: url(../img/dian.png) no-repeat 55px center;
+    position: relative;
+    padding-left: 5px;
+    margin-right: 15px;
+}
+
+.top .right .perList {
+    width: 225px;
+    border: 1px solid #C9C9C9;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    background: #FFF;
+    position: absolute;
+    left: -70px;
+    top: 20px;
+    z-index: 2;
+    font-size: 12px;
+    display: none;
+}
+
+.top .right .peripheral:hover .perList {
+    display: block;
+}
+
+.top .right .helpCenter {
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+    background: url(../img/dian.png) no-repeat 55px center;
+    position: relative;
+    padding-left: 5px;
+    margin-right: 15px;
+}
+
+.top .right .helpList {
+    width: 65px;
+    border: 1px solid #C9C9C9;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    background: #FFF;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    z-index: 2;
+    font-size: 12px;
+    display: none;
+}
+
+.top .right .helpCenter:hover .helpList {
+    display: block;
+}
+
+.top .right .mobileCenter {
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+    background: url(../img/right.png) no-repeat -10px -77px;
+    text-indent: 12px;
+    position: relative;
+}
+
+.top .right .mobileList {
+    width: 150px;
+    height: 182px;
+    border: 1px solid red;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: -86px;
+    background: url(../img/weixin.png);
+    display: none;
+}
+
+.top .right .mobileCenter:hover .mobileList {
+    display: block;
+}
+
+.nav {
+    height: 47px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.navList {
+    width: 725px;
+    height: 30px;
+    padding-top: 15px;
+    border: 1px solid red;
+    overflow: hidden;
+    margin-left: 215px;
+    display: inline-block;
+}
+
+.navList li {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    border-right: 1px solid #7c7b7b;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+}
+
+.navList li:nth-child(6) {
+    border: none;
+}
+
+.nav #spe {
+    height: 30px;
+    border-bottom: 1px solid #7c7b7b;
+    position: absolute;
+    top: 8px;
+}
+
+.nav #sub {
+    background: url(../img/eye\,seach.png) -24px -69px no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 1111px;
+}
+
+.commodityListWarp {
+    overflow: hidden;
+}
+
+.commodityList {
+    width: 1120px;
+    margin: 0 auto;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.commodityList .left {
+    width: 200px;
+    border: 1px solid red;
+    float: left;
+}
+
+.commodityList .left .love h3 {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background: #e3e3e3;
+    font-size: 20px;
+    color: #333333;
+    font-weight: bolder;
+}
+
+.commodityList .left .love ul li {
+    height: 118px;
+    padding-top: 6px;
+    padding-left: 6;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.commodityList .left .love ul li .loveImg {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 112px;
+}
+
+.commodityList .left .love ul li .loveImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.commodityList .left .love ul li .loveInf {
+    margin-left: 8px;
+    padding-top: 20px;
+    float: left;
+    width: 100px;
+    color: #666;
+}
+
+.commodityList .left .love ul li .loveInf a {
+    display: block;
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+    height: 26px;
+    overflow: hidden;
+}
+
+.commodityList .left .love ul li .loveInf a:hover {
+    text-decoration: underline;
+}
+
+.commodityList .left .love ul li .loveInf .num span {
+    color: #ee4727;
+}
+
+.hotImg {
+    width: 26px;
+    height: 28px;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    background: url(../img/listhot.png) no-repeat;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.warrior {
+    padding-top: 20px;
+}
+
+.warrior h3 {
+    height: 42px;
+    line-height: 42px;
+    background: #e3e3e3;
+    text-indent: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #282725;
+}
+
+.warrior ul li {
+    width: 100px;
+    float: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.warrior ul li a {
+    width: 80px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+}
+
+.warrior ul li a span {
+    display: block;
+    width: 58px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #333333;
+    opacity: 0.7;
+}
+
+.commodityList .right {
+    width: 905px;
+    float: right;
+}
+
+.categoryWarp {
+    padding: 10px 20px 20px 20px;
+    background: #ffffff;
+    border: 4px solid #e3e3e3;
+    height: auto;
+}
+
+.category {}
+
+.category .tableList {
+    width: 100px;
+    text-indent: 16px;
+    color: #999;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    background: url(../img/right_dian.png) left center no-repeat;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 12px;
+}
+
+.category .allFood {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 40px;
+    font-size: 14px;
+    background: #ec4828;
+    color: #FFF;
+    width: 80px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.category .kind {
+    float: left;
+    margin-top: 12px;
+}
+
+.category .kind li:hover {
+    margin-bottom: 100px;
+}
+
+.category .kind li:hover .claFi {
+    display: block;
+}
+
+.category li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 25px;
+    font-size: 14px;
+    position: relative;
+    cursor: default;
+    padding: 0 12px;
+}
+
+.claFi {
+    position: absolute;
+    width: 360px;
+    padding-left: 10px;
+    border: 1px solid #e7e7e7;
+    background: chartreuse;
+    z-index: 5;
+    left: -150px;
+    display: none;
+}
+
+.category li:nth-child(6) .claFi {
+    left: -240px;
+}
+
+.claFi span {
+    margin-right: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.kindListWarp {
+    height: 30px;
+    margin-top: 25px;
+    background: #282725;
+}
+
+.kindListWarp .lef {
+    margin-left: 15px;
+}
+
+.kindListWarp .lef span {
+    width: 100px;
+    display: block;
+    background: url(../img/list_dian.png)no-repeat 70px 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #bdbdbd;
+    float: left;
+}
+
+.kindListWarp .rig {
+    float: right;
+}
+
+.kindListWarp .rig span:nth-child(1) {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    color: #bdbdbd;
+}
+
+.kindListWarp .rig span:nth-child(2) {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    width: 30px;
+    background: url(../img/page_jian.png) 68px 82px;
+}
+
+.kindListWarp .rig span:nth-child(3) {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    width: 30px;
+    background: url(../img/page_jian.png) 42px 82px;
+}
+
+.articleList {
+    overflow: hidden;
+}
+
+.articleList li {
+    width: 225px;
+    height: 370px;
+    padding-top: 15px;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    float: left;
+    position: relative;
+}
+
+.articleList li .articleImg {
+    display: block;
+    width: 205px;
+    height: 285px;
+    margin: 0 auto;
+    border: 2px solid #eeeeee;
+}
+
+.articleList li .articleImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.articleList li .articleName {
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.articleList li .articleName:hover {
+    text-decoration: underline;
+}
+
+.articleList li p {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+}
+
+.articleList li p span {
+    color: #ee4727;
+    margin-right: 5px;
+}
+
+.chooseList {
+    padding: 40px 20px 60px 20px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    color: #c8c8c8;
+}
+
+.chooseLisOut {
+    float: right;
+}
+
+.chooseList span {
+    float: left;
+    margin-right: 5px;
+}
+
+.chooseList ul {
+    height: 38px;
+    /* display: inline-block; */
+    overflow: hidden;
+    float: left;
+    margin-left: 5px;
+}
+
+.chooseList ul li {
+    border: 1px solid #d0d0d0;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+}
+
+.chooseList p {
+    display: inline-block;
+    border: 1px solid #d0d0d0;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    float: left;
+}
+
+.collectItemsWarp {
+    width: 1120px;
+    height: 355px;
+    margin: 100px auto 40px;
+}
+
+.itemsTit {
+    height: 40px;
+    background: url(../img/hea_bj.png) no-repeat 0px 10px;
+}
+
+.itemsTit h3 {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 25px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #282725;
+    display: inline-block;
+}
+
+.itemsTit span {
+    width: 82px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #999999;
+    margin-left: 925px;
+}
+
+.collectItemsListWarp {
+    height: 310px;
+    border-top: 2px solid #282725;
+    background: url(../img/listbottom_bj.jpg) center top repeat-y;
+}
+
+.collectItemsList {
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+
+.collectItemsList li {
+    width: 159px;
+    height: 300px;
+    padding-top: 10px;
+    float: left;
+}
+
+.collectItemsList li .itemsImg {
+    display: block;
+    height: 196px;
+    margin-bottom: 6px;
+}
+
+.collectItemsList li .itemsImg img {
+    width: 140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.collectItemsList li .itemsName {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+
+.collectItemsList li .itemsName:hover {
+    text-decoration: underline;
+}
+
+.collectItemsList li .itemsPri {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: #999999;
+}
+
+.collectItemsList li .itemsPri .left {
+    color: #ee4727;
+    margin-right: 15px;
+}
+
+.collectItemsList li .joinCar {
+    width: 90px;
+    height: 28px;
+    border: 1px solid #999999;
+    line-height: 28px;
+    margin: 0 auto;
+    color: #333333;
+    display: block;
+    text-align: center;
+}
+
+.littleBanWarp {
+    height: 240px;
+    margin-top: 60px;
+}
+
+.littleBan {
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.littleBan a {
+    display: block;
+    width: 1200px;
+    height: 240px;
+}
+
+.littleBan a img {
+    width: 100%;
+    height: 100%;
+}
+
+.xianBj {
+    width: 1200px;
+    margin: 50px auto;
+    height: 10px;
+    background: url(../img/border-bott.png);
+}
+
+.qualityWarp {
+    height: 200px;
+}
+
+.quality {
+    width: 1200px;
+    margin: 0 auto;
+    height: 200px;
+    background: url(../img/bott.png) no-repeat;
+}
+
+.afterSeSrvWarp {
+    width: 1120px;
+    height: 180px;
+    margin: 0 auto;
+    border-bottom: 1px solid #cecece;
+}
+
+.afterSeSrv {
+    width: 1120px;
+    height: 180px;
+}
+
+.afterSeSrv li {
+    float: left;
+    width: 215px;
+    padding-left: 16px;
+}
+
+.afterSeSrv li h3 {
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.afterSeSrv li .seSrvProj a {
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.afterSeSrv li a {
+    display: block;
+    line-height: 28px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.afterSeSrv li:nth-child(5) {
+    width: 125px;
+    text-align: center;
+    font-size: 14px;
+    border-left: 1px solid #cecece;
+}
+
+.afterSeSrv li .weiChat {
+    background: url(../img/bottom.png) -8px -400px;
+    width: 125px;
+    height: 130px;
+}
+
+.footer {
+    height: 120px;
+    overflow: hidden;
+}
+
+.footBj {
+    background: url(../img/bottom.png) -8px -308px no-repeat;
+    width: 815px;
+    height: 85px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.policemen {
+    width: 36px;
+    height: 50px;
+    margin-top: 35px;
+    float: left;
+    margin-left: 235px;
+}
+
+.policemen a {
+    display: inline-block;
+    width: 36px;
+    height: 50px;
+}
+
+.policemen a img {
+    width: 100%;
+    height: 100%;
+}
+
+.inFor {
+    font-size: 13px;
+    color: #333333;
+    margin-top: 35px;
+    float: left;
+    margin-left: 10px;
+}

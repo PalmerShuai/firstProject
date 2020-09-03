@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 300px;
+            height: 150px;
+            border: solid 1px orange;
+        }
+        
+        img {
+            width: 300px;
+            height: 150px;
+            position: absolute;
+        }
+        
+        .dis {
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="../img/flash312.jpg" alt="" class="dis">
+        <img src="../img/flash313.jpg" alt="">
+        <img src="../img/flash314.jpg" alt="">
+
+    </div>
+    <script>
+        var i = 0;
+        var dir = 'opacity';
+        var timer = setInterval(() => {
+            let speedX = 0.1;
+            var dis = document.getElementsByClassName("dis")[0];
+            var oImg = document.getElementsByTagName("img");
+            oImg[0].className = "";
+            var op = parseFloat(getComputedStyle(dis)[dir]) - speedX;
+            dis.style[dir] = op;
+            if (op <= 0 || op >= 1) {
+                dis.className = "";
+                oImg[i].className = "dis";
+                console.log(oImg[i]);
+                i++;
+                if (i == 4) {
+                    i = 0;
+                }
+                op = parseFloat(getComputedStyle(dis)[dir]);
+            }
+            console.log(op);
+        }, 1000)
+    </script>
+</body>
+
+</html>

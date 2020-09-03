@@ -1,0 +1,186 @@
+#banner {
+    background: url(../img/login_bg_font.jpg) no-repeat;
+    height: 540px;
+    overflow: hidden;
+}
+
+#nav {
+    margin: 40px 0 25px 460px;
+    overflow: hidden;
+}
+
+#nav li {
+    float: left;
+    border: 1px solid #ffffff;
+    height: 35px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 35px;
+    margin-right: 5px;
+}
+
+#nav li:hover {
+    background-color: #ffffff;
+}
+
+#nav li:hover a {
+    color: black;
+}
+
+#nav li a {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+#logIn {
+    width: 625px;
+    height: 400px;
+    background-color: #ffffff;
+    margin-left: 560px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+}
+
+#logIn h3 {
+    font-size: 20px;
+    color: #333333;
+    margin: 53px 0 24px 0;
+}
+
+#logIn h4 {
+    font-size: 16px;
+    color: #b77d66;
+    margin-bottom: 38px;
+}
+
+#logIn h4 a {
+    color: #3481cf;
+}
+
+#userName {
+    text-indent: 10px;
+    display: block;
+    margin: 0 auto 14px;
+    width: 270px;
+    height: 40px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#passWar {
+    display: block;
+    margin: 0 auto 14px;
+    width: 270px;
+    height: 40px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+#btn {
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    height: 40px;
+    font-size: 16px;
+    color: #f7ffff;
+    background-color: #86ce2f;
+}
+
+#logIn #passQues {
+    margin: 65px 0 0 405px;
+    overflow: hidden;
+}
+
+#logIn #passQues li {
+    float: left;
+    height: 13px;
+    line-height: 10px;
+    border-right: 1px solid #cecece;
+}
+
+#logIn #passQues li:last-child {
+    border: none;
+}
+
+#logIn #passQues li a {
+    margin: 0 8px;
+    font-size: 10px;
+}
+
+#logIn #passQues li a:hover {
+    text-decoration: underline;
+}
+
+#bottom {
+    height: 110px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+
+#service {
+    height: 75px;
+    background-color: #dedede;
+    margin-top: 35px;
+}
+
+#service li:nth-child(1) {
+    width: 280px;
+    height: 75px;
+    background: url(../img/bottom.png) 0 -246px;
+    float: left;
+    margin-left: 255px;
+}
+
+#service li:nth-child(2) {
+    width: 280px;
+    height: 75px;
+    background: url(../img/bottom.png) 0 0px;
+    float: left;
+}
+
+#service li:nth-child(3) {
+    width: 280px;
+    height: 75px;
+    background: url(../img/bottom.png) 0 -79px;
+    float: left;
+}
+
+#service li .top {
+    font-size: 18px;
+    color: #282725;
+    font-weight: 800;
+    margin: 20px 0 5px 80px;
+}
+
+#service li .bottom {
+    font-size: 13px;
+    color: #666666;
+    margin-left: 80px;
+}
+
+.footer {
+    height: 120px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.footBj {
+    background: url(../img/bottom.png) -8px -308px no-repeat;
+    width: 765px;
+    height: 85px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.inFor {
+    font-size: 13px;
+    color: #333333;
+    margin-left: 250px;
+    margin-top: 35px;
+}

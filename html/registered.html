@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qqLogin</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/registered.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+
+</head>
+
+<body>
+    <div id="warp">
+        <div id="main">
+            <div id="left">
+                <div class="im"></div>
+                <div class="logo">
+                    <img src="../img/logo.png" alt="">
+                    <a href="">QQ</a>
+                </div>
+            </div>
+            <div id="right">
+                <div class="top">
+                    <div class="left">
+                        <img src="../img/logo3.png" alt="">
+                        <div class="logBj">QQ靓号</div>
+                    </div>
+                    <div class="center">
+                        <div>
+                            <p>简体中文</p>
+
+                        </div>
+                        <ul>
+                            <li>繁体中文</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <p>意见反馈</p>
+                    </div>
+                </div>
+
+
+                <h1>欢迎注册QQ</h1>
+                <div class="inp">
+                    <p><span class="day">每一天，乐在沟通。</span> <em class="free">免费靓号</em></p>
+                    <input type="text" id="userName" placeholder="昵称">
+                    <p class="userTit">用户名不能为空</p>
+
+                    <input type="password" id="passWard" placeholder="密码">
+                    <ul class="passWord">
+                        <li>长度不能包括空格</li>
+                        <li>长度为8-16个字符</li>
+                        <li>必须包含字母、数字、符号中至少2种</li>
+                    </ul>
+                    <p class="passTit">密码你能为空</p>
+                    <div id="telWarps">
+                        <div id="tel">
+                            <input type="text" id="telTit" value="+86">
+                            <span class="telTitSan"></span>
+                        </div>
+                        <input type="text" id="telNum" placeholder="手机号码">
+
+                        <ul class="telAd">
+                            <li>中国<span>+86</span></li>
+                            <li>中国香港特别行政区<span>+852</span></li>
+                            <li>中国澳门特别行政区<span>+853</span></li>
+                            <li>中国澳门台晚地区<span>+886</span></li>
+                            <li>中国<span>+86</span></li>
+                            <li>中国香港特别行政区<span>+852</span></li>
+                            <li>中国澳门特别行政区<span>+853</span></li>
+                            <li>中国澳门台晚地区<span>+886</span></li>
+
+                        </ul>
+                        <p class="telTit" id="telStyle">可通过该手机号找回密码</p>
+                    </div>
+                    <div id="smsTit">
+                        <input type="text" placeholder="短信验证码" id="smsInf">
+                        <input type="button" value="发送短信验证码" id="smsSent">
+                    </div>
+                    <input type="button" id="sub" value="立即注册">
+                    <p><span><input type="checkbox" id="check"></span><span>我已阅读并同意相关服务条款和隐私政策</span>
+                        <span class="telTitSan" id="ruleStyle"></span>
+                    </p>
+                    <ul class="qqTit">
+                        <li>《QQ号码规则》</li>
+                        <li>《隐私政策》</li>
+                        <li>《QQ空间服务协议》</li>
+                    </ul>
+
+
+                    <div id="ade">Copyright © 1998-2020Tencent All Rights Reserved</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/registered.js"></script>
+    <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+</body>
+
+</html>
